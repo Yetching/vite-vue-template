@@ -15,11 +15,13 @@ module.exports = {
     sourceType: 'module',
   },
   // ↓扩展项
-  extends: ['plugin:vue/vue3-essential', 'prettier', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
   // ↓自定义规则配置
   rules: {
     // 禁止声明未使用的变量
-    // 'no-unused-vars': ['error', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
+    'space-before-function-paren': 'off',
+    // "prettier/prettier": "off",
+
     'vue/attributes-order': 'off',
     'vue/one-component-per-file': 'off',
     'vue/html-closing-bracket-newline': 'off',

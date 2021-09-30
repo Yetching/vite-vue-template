@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint:eslint": "eslint \"{src,mock}/**/*.{vue,js,jsx}\" --fix",
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,jsx,css,less,scss,vue,html,md}\""
   },
   "dependencies": {
     "vue": "^3.2.13"

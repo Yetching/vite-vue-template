@@ -1,11 +1,11 @@
 <script setup>
-import { ref } from 'vue';
+  import { ref } from 'vue';
 
-defineProps({
-  msg: String,
-});
+  defineProps({
+    msg: String,
+  });
 
-const count = ref(0);
+  const count = ref(0);
 </script>
 
 <template>
@@ -28,9 +28,7 @@ const count = ref(0);
     <a
       href="https://vitejs.dev/guide/features.html"
       target="_blank"
-    >
-      Vite Documentation
-    </a>
+    > Vite Documentation </a>
     |
     <a
       href="https://v3.vuejs.org/"
@@ -49,7 +47,7 @@ const count = ref(0);
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
-}
+  a {
+    color: #42b983;
+  }
 </style>
