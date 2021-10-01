@@ -4,16 +4,31 @@
   "vetur.format.styleInitialIndent": true,
   "eslint.format.enable": false,
   "editor.formatOnSave": true,
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
   "vetur.format.defaultFormatterOptions": {
     "js-beautify-html": {
       "wrap_attributes": "force-expand-multiline"
     },
-    "prettier": {
-      "eslintIntegration": true,
-      "arrowParens": "always",
-      "semi": true,
-      "singleQuote": true
+  },
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "eslint.alwaysShowStatus": true,
+  //要么在.eslintrc里配置plugin要么在这里配置
+  // "eslint.options": {
+  //   "plugins": ["html", "vue"]
+  // },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue"
+  ],
+  "vetur.validation.template": false,
+  "prettier.requireConfig": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
     }
   },
 }

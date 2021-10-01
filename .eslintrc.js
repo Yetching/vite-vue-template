@@ -14,14 +14,21 @@ module.exports = {
   parserOptions: {
     sourceType: 'module',
   },
+  //第三方插件  省略了eslint-plugin前缀
+  plugins: ['vue', 'javascript'],
   // ↓扩展项
-  extends: ['plugin:vue/vue3-recommended', 'plugin:prettier/recommended'],
+  extends: ['plugin:vue/vue3-recommended', 'prettier', 'plugin:prettier/recommended'],
   // ↓自定义规则配置
   rules: {
-    // 禁止声明未使用的变量
     'space-before-function-paren': 'off',
-    // "prettier/prettier": "off",
-
+    'prettier/prettier': [
+      'error',
+      {},
+      {
+        usePrettierrc: true,
+      },
+    ],
+    // 配置定义在插件中的一个规则的时候，你必须使用 插件名/规则ID 的形式
     'vue/attributes-order': 'off',
     'vue/one-component-per-file': 'off',
     'vue/html-closing-bracket-newline': 'off',
