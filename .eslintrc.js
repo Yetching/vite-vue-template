@@ -15,7 +15,7 @@ module.exports = {
     sourceType: 'module',
   },
   //第三方插件  省略了eslint-plugin前缀
-  plugins: ['vue', 'javascript'],
+  // plugins: ['vue', 'javascript'],
   // ↓扩展项
   extends: ['plugin:vue/vue3-recommended', 'prettier', 'plugin:prettier/recommended'],
   // ↓自定义规则配置
