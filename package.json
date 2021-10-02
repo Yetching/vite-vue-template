@@ -7,12 +7,16 @@
     "build": "vite build",
     "serve": "vite preview",
     "lint:eslint": "eslint \"{src,mock}/**/*.{vue,js,jsx}\" --fix",
-    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,jsx,css,less,scss,vue,html,md}\""
+    "lint:prettier": "prettier --write --loglevel warn \"src/**/*.{js,json,jsx,css,less,scss,vue,html,md}\"",
+    "lint:lint-staged": "lint-staged -c ././husky/lintstagedrc.js",
+    "lint:pretty": "pretty-quick --staged"
   },
   "dependencies": {
     "vue": "^3.2.13"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.2.0",
+    "@commitlint/config-conventional": "^13.2.0",
     "@vitejs/plugin-legacy": "^1.5.3",
     "@vitejs/plugin-vue": "^1.9.0",
     "@vitejs/plugin-vue-jsx": "^1.1.8",
@@ -20,7 +24,11 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^7.18.0",
+    "husky": "^7.0.2",
+    "is-ci": "^3.0.0",
+    "lint-staged": "^11.1.2",
     "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
     "vite": "^2.5.10",
     "vite-plugin-svg-icons": "^1.0.5",
     "vue-eslint-parser": "^7.11.0"
