@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "/@/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*.js", "src/**/*.vue", "build/**/*.js", "build/**/*.vue", "vite.config.js"],
+  "exclude": ["node_modules", "dist"]
+}
