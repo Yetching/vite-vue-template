@@ -8,7 +8,7 @@ import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 export function configUnPluginComp() {
   return Components({
     resolvers: [AntDesignVueResolver()],
-    dts: true,
+    dts: false,
     include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
   });
 }
